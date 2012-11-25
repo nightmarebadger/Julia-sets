@@ -1,0 +1,4 @@
+A simple program visualising Julia sets using Python and Tkinter. 
+
+It's not really optimised or anything, just shows a simple way to do it. 
+Also, lots of commented returns/options, since I'm still playing around to find one I like :P
