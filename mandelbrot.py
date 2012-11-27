@@ -5,7 +5,7 @@ import time
 
 wid = 1000
 hei = 1000
-maxiter = 200
+maxiter = 256
 blowup = 2
 
 
