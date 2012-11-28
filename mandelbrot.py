@@ -1,7 +1,6 @@
 from tkinter import Tk, Canvas, PhotoImage, NW
 from random import randint
 import time
-#import cmath
 
 wid = 1000
 hei = 1000
@@ -104,7 +103,6 @@ class Jul:
 		#c = complex(-0.1,0.651)
 		#c = complex(-0.70176,-0.3842)
 		c = complex(-0.835,-0.2321)
-		#c = complex(-1,0)
 		#c = complex(-0.74434, -0.10772)
 		#c = complex(-0.62772, 0.42193)
 
@@ -119,14 +117,10 @@ class Jul:
 				a = complex(x, y)
 
 				for k in range(maxiter):
-					a = a**2 + c
-					#a = a**3 + c
-					#a = cmath.sin(a**2) + cmath.cos(c)
+					a = a*a + c
 					if(abs(a) > blowup):
 						break
-				#print(k)
 				if(k == maxiter-1):
-					#print("Hello")
 					#line += '#%02x%02x%02x ' % (255,255,255)
 					line += '#%02x%02x%02x ' % (0,0,0)
 				else:
@@ -142,7 +136,7 @@ class Jul:
 
 root = Tk()
 
-a = Jul(root, -blowup, blowup, blowup, -blowup)
+a = Jul(root, -2, 2, 2, -2)
 
 
 root.mainloop()
